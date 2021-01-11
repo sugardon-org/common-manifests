@@ -1,0 +1,22 @@
+---
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: common-manifests-volume
+spec:
+  project: default
+  source:
+    directory:
+      recurse: false
+    path: volume/overlays/sugardon02
+    repoURL: https://github.com/sugardon-org/common-manifests
+    targetRevision: main
+  destination:
+    namespace: common-manifests
+    server: https://kubernetes.default.svc
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: false
+    syncOptions:
+      - CreateNamespace=true
