@@ -43,3 +43,9 @@ nextcloud:
   host: nextcloud.sugardon02.com
   username: admin
   password: admin
+
+  datadir: /nas-nextclouddata
+
+  extraVolumeMounts:
+    - name: nas-nextclouddata
+      mountPath: "/nas-nextclouddata"

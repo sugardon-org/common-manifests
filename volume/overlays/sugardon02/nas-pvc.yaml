@@ -13,3 +13,19 @@ spec:
   selector:
     matchLabels:
       release: test
+
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: nas-nextclouddata
+spec:
+  accessModes:
+    - ReadOnlyMany
+  storageClassName: nfs-nextclouddata
+  resources:
+    requests:
+      storage: 1Ti
+  selector:
+    matchLabels:
+      release: test
