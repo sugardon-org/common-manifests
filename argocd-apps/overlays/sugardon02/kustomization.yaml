@@ -7,3 +7,4 @@ namespace: helmfile-argocd-sugardon02
 resources:
   - ../../base
   - volume.yaml
+  - nextcloud.yaml

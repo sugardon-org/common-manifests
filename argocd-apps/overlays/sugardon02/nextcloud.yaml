@@ -1,0 +1,25 @@
+---
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: common-manifests-nextcloud
+spec:
+  project: default
+  source:
+    directory:
+      recurse: false
+    repoURL: https://nextcloud.github.io/helm/
+    path: nextcloud/nextcloud
+    targetRevision: nextcloud-2.5.0
+    helm:
+      valueFiles:
+        - https://raw.githubusercontent.com/sugardon-org/common-manifests/main/nextcloud/values.yaml
+  destination:
+    namespace: nextcloud
+    server: https://kubernetes.default.svc
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: false
+    syncOptions:
+      - CreateNamespace=true
