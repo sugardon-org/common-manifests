@@ -6,4 +6,5 @@ namespace: common-manifests
 
 resources:
   - ../../base
-  - nas.yaml
+  - nas-pv.yaml
+  - nas-pvc.yaml

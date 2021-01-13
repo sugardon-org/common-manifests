@@ -1,0 +1,15 @@
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: nas-storage001
+spec:
+  accessModes:
+    - ReadWriteMany
+  storageClassName: nfs-standard
+  resources:
+    requests:
+      storage: 5Gi
+  selector:
+    matchLabels:
+      release: test
