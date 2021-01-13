@@ -47,3 +47,7 @@ nextcloud:
   extraVolumeMounts:
     - name: nas-nextclouddata
       mountPath: "/var/www/html/data/nas-storage"
+  extraVolumes:
+    - name: nas-nextclouddata
+      persistentVolumeClaim:
+        claimName: nas-nextclouddata
