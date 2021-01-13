@@ -44,8 +44,6 @@ nextcloud:
   username: admin
   password: admin
 
-  datadir: /nas-nextclouddata
-
   extraVolumeMounts:
     - name: nas-nextclouddata
-      mountPath: "/nas-nextclouddata"
+      mountPath: "/var/www/html/data/nas-storage"
