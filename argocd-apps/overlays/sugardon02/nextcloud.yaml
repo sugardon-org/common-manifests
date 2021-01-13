@@ -8,8 +8,8 @@ spec:
   source:
     directory:
       recurse: false
-    repoURL: https://nextcloud.github.io/helm/
-    path: nextcloud/nextcloud
+    repoURL: https://github.com/nextcloud/helm
+    path: charts/nextcloud
     targetRevision: nextcloud-2.5.0
     helm:
       valueFiles:
