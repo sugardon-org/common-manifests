@@ -15,7 +15,7 @@ spec:
       valueFiles:
         - https://raw.githubusercontent.com/sugardon-org/common-manifests/main/nextcloud/values.yaml
   destination:
-    namespace: nextcloud
+    namespace: common-manifests
     server: https://kubernetes.default.svc
   syncPolicy:
     automated:
