@@ -12,8 +12,6 @@ spec:
     path: nextcloud/
     targetRevision: main
     helm:
-      values:
-        - values.yaml
       version: v3
   destination:
     namespace: common-manifests
