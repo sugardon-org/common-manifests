@@ -44,16 +44,6 @@ nextcloud:
     username: admin
     password: admin
 
-    datadir: /nas-nextclouddata
-
-    extraVolumeMounts:
-      - name: nas-nextcloud-storage
-        mountPath: /mnt/nas-nextcloud-storage
-    extraVolumes:
-      - name: nas-nextcloud-storage
-        persistentVolumeClaim:
-          claimName: nas-nextcloud-storage
-
   persistence:
     enabled: true
     accessMode: ReadWriteMany
