@@ -50,5 +50,5 @@ nextcloud:
     enabled: true
     accessMode: ReadWriteMany
     size: 10Gi
-    storageClass: "nfs-nextclouddata"
+    storageClass: nfs-nextclouddata
     # TODO selector.matchLabels.release
