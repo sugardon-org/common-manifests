@@ -1,2 +1,4 @@
 ---
+apiVersion: v2
 name: nextcloud
+version: 2.5.0
