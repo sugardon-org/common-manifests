@@ -60,3 +60,9 @@ nextcloud:
     #      - name: nas-nextclouddata
     #        persistentVolumeClaim:
     #          claimName: nas-nextclouddata
+  persistence:
+    enabled: true
+    accessMode: ReadWriteMany
+    size: 10Gi
+    storageClass: nfs-nextclouddata
+    # TODO selector.matchLabels.release

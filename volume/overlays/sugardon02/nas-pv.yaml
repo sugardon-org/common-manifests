@@ -25,10 +25,10 @@ metadata:
     release: test
 spec:
   capacity:
-    storage: 1Ti
+    storage: 10Gi
   storageClassName: nfs-nextclouddata
   accessModes:
-    - ReadOnlyMany
+    - ReadWriteMany
   nfs:
     server: 192.168.20.207
-    path: "/storage"
+    path: "/sugardon02-storage/nextclouddata"
