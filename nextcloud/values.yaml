@@ -47,9 +47,16 @@ nextcloud:
     datadir: /nas-nextclouddata
 
     extraVolumeMounts:
-      - name: nas-nextclouddata
+      - name: nas-storage001
         mountPath: /nas-nextclouddata
     extraVolumes:
-      - name: nas-nextclouddata
+      - name: nas-storage001
         persistentVolumeClaim:
           claimName: nas-nextclouddata
+    #    extraVolumeMounts:
+    #      - name: nas-nextclouddata
+    #        mountPath: /nas-nextclouddata
+    #    extraVolumes:
+    #      - name: nas-nextclouddata
+    #        persistentVolumeClaim:
+    #          claimName: nas-nextclouddata
