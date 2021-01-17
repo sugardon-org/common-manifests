@@ -8,13 +8,9 @@ spec:
   source:
     directory:
       recurse: false
-    repoURL: https://github.com/nextcloud/helm
-    path: charts/nextcloud
-    targetRevision: nextcloud-2.5.0
-    helm:
-      valueFiles:
-        - https://raw.githubusercontent.com/sugardon-org/common-manifests/main/nextcloud/values.yaml
-  destination:
+    repoURL: https://github.com/sugardon-org/common-manifests
+    path: nextcloud/
+    targetRevision: master
     namespace: common-manifests
     server: https://kubernetes.default.svc
   syncPolicy:
