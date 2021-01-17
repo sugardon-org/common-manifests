@@ -10,7 +10,7 @@ spec:
       recurse: false
     repoURL: https://github.com/sugardon-org/common-manifests
     path: nextcloud/
-    targetRevision: master
+    targetRevision: main
   destination:
     namespace: common-manifests
     server: https://kubernetes.default.svc
