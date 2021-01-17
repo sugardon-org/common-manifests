@@ -52,7 +52,7 @@ nextcloud:
     extraVolumes:
       - name: nas-nextcloud-storage
         persistentVolumeClaim:
-        claimName: nas-nextcloud-storage
+          claimName: nas-nextcloud-storage
 
   persistence:
     enabled: true
