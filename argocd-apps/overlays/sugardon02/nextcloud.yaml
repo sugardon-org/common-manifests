@@ -11,6 +11,7 @@ spec:
     repoURL: https://github.com/sugardon-org/common-manifests
     path: nextcloud/
     targetRevision: master
+  destination:
     namespace: common-manifests
     server: https://kubernetes.default.svc
   syncPolicy:
